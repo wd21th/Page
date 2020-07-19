@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+font-family: "Font Awesome";
+font-family: 'Merriweather', serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'PT Sans Caption', sans-serif; 
+*/
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  height: 800px;
+  background-color: #004371;
+  background-image: url("./../img/bg-header.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  /* Style for "Title" */
+  width: 569px;
+  height: 166px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 240px;
+  margin-bottom: 297px;
+}
+.header__title h1 {
+  /* Style for "Юрий Ключе" */
+  color: #ffffff;
+  font-family: Merriweather;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 62px;
+  margin-bottom: 36px;
+}
+.header__title p {
+  /* Style for "Верстка са" */
+  color: #ffffff;
+  font-family: "PT Sans - Caption", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+  padding: 0px 74px 0px 74px;
+  text-align: center;
+}
+
+/* Style for "PORTFOLIO" */
+.portfolio {
+  margin-top: 84px;
+  margin-bottom: 111px;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__title {
+  /* Style for "Портфолио" */
+  width: inherit;
+  height: 50px;
+  color: #000000;
+  font-family: Merriweather;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 62px;
+  margin-bottom: 67px;
+  text-align: center;
+}
+.portfolio-templates {
+  display: flex;
+}
+.portfolio-templates__description {
+  margin-top: 25px;
+  width: 313px;
+  height: 79px;
+}
+.portfolio-templates__description h1 {
+  color: #0052c2;
+  font-family: "PT Sans - Caption";
+  font-size: 24px;
+  /* Text style for "Верстка од" */
+  font-family: "Noto Sans";
+  line-height: 24px;
+}
+.portfolio-templates__description p {
+  color: #000000;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+.portfolio-templates__work2 {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.footer {
+  height: 400px;
+  background-color: #061634;
+}
+.footer-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.footer-content {
+  width: inherit;
+  display: flex;
+}
+
+.footer-worker {
+  margin-top: 80px;
+}
+.footer-worker .responsible-for {
+  /* Style for "Юрий Ключе" */
+  width: 284px;
+  height: 62px;
+  color: #6479a2;
+  font-family: "PT Sans - Caption";
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-worker .name {
+  color: #6479a2;
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: Merriweather;
+  font-size: 28px;
+  font-weight: 400;
+  /* Text style for "HTML верст" */
+  font-family: "PT Sans Caption";
+}
+
+.footer-socials {
+  margin-top: 92px;
+  margin-right: 111px;
+  margin-left: 111px;
+}
+.footer-socials .social-list {
+  /* Style for "Мои профил" */
+  width: 277px;
+  height: 16px;
+  color: #ffffff;
+  font-family: "PT Sans - Caption";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+.footer-contact {
+  margin-top: 93px;
+}
+.footer-contact .contact-with-vk {
+  width: 262px;
+  height: 42px;
+  border: 2px solid #ffffff;
+  background-color: #061634;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: "PT Sans - Caption Bold";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "с, вязатьс" */
+  letter-spacing: 1.6px;
+  margin-bottom: 20px;
+}
+.footer-contact .write-me {
+  width: 337px;
+  height: 39px;
+  color: #647aa2;
+  font-family: "PT Sans - Caption";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
