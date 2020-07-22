@@ -8,6 +8,8 @@
   border: 0;
 }
 
+
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -71,6 +73,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
+  margin-top: 0;
 }
 
 /*
@@ -81,12 +84,17 @@ font-family: 'PT Sans Caption', sans-serif;
 */
 .container {
   width: 1140px;
+  height: inherit;
   margin: 0 auto;
-  display: flex;
+  
+}
+/*
+
+display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  */
 
 .header {
   position: relative;
@@ -96,6 +104,13 @@ font-family: 'PT Sans Caption', sans-serif;
   background-position: center;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-content{
+  height: inherit;
+display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -135,7 +150,7 @@ font-family: 'PT Sans Caption', sans-serif;
 .portfolio {
   margin-top: 84px;
   margin-bottom: 111px;
-  width: inherit;
+  /*width: inherit;*/
   display: flex;
   flex-direction: column;
 }
